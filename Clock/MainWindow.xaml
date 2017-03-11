@@ -1,0 +1,161 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clock"
+        xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="Clock.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="550">
+    <Grid>
+        <Ellipse Margin="8,10.058,32,6.942" Stroke="Black">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF030A19" Offset="1"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF6B94EC" Offset="0.483"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Label x:Name="label12" Content="12" Height="60" Margin="234,10,0,0" VerticalAlignment="Top" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="50"/>
+        <Label x:Name="label1" Content="1" Height="60" Margin="353.232,39.736,0,0" VerticalAlignment="Top" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="31.611" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="30"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label2" Content="2" Height="60" Margin="435.097,120.338,0,0" VerticalAlignment="Top" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="29.612" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="60"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label3" Content="3" Margin="467.333,0,0,230" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="28" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Padding="5,3,5,5" UseLayoutRounding="False">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label4" Content="4" Margin="438.083,0,0,118.583" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="28" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Padding="5,3,5,5" UseLayoutRounding="False" d:LayoutOverrides="VerticalAlignment">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-60"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label5" Content="5" Margin="356.417,0,0,37.415" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="28" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Padding="5,3,5,5" UseLayoutRounding="False" d:LayoutOverrides="VerticalAlignment">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-30"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label6" Content="6" Margin="245.167,0,0,6.942" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="28" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Padding="5,3,5,5" UseLayoutRounding="False" d:LayoutOverrides="VerticalAlignment">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label7" Content="7" Margin="133.667,0,0,36.942" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="28" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Padding="5,3,5,5" UseLayoutRounding="False" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="30"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label8" Content="8" Margin="51.833,0,0,118.358" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="28" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Padding="5,3,5,5" UseLayoutRounding="False" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="60"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label9" Content="9" Margin="21.958,0,0,229.941" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="28" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Padding="5,3,5,5" UseLayoutRounding="False" d:LayoutOverrides="HorizontalAlignment">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label10" Content="10" Height="60" Margin="42.5,120.5,0,0" VerticalAlignment="Top" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="50" d:LayoutOverrides="HorizontalAlignment" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-60"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label11" Content="11" Height="60" Margin="123.833,40,0,0" VerticalAlignment="Top" FontSize="36" HorizontalAlignment="Left" BorderThickness="0" Width="50" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-30"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Ellipse Margin="173,175.058,197,171.942" Stroke="Black">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9968F0" Offset="0"/>
+                    <GradientStop Color="#FFF9C3C3" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Canvas x:Name="Canv2" Margin="173,175.058,197,171.942" RenderTransformOrigin="0.5 0.5">
+            <ed:RegularPolygon Fill="#FF05050F" Height="73"
+        		InnerRadius="1" PointCount="3" Stretch="Fill" 
+        		Stroke="#FF0F0F0F" VerticalAlignment="Top" Width="14" 
+        		Canvas.Left="79" Canvas.Top="-73"/>
+        </Canvas>
+        <Canvas x:Name="Canv1" Margin="201.125,203.183,225.125,200.067" RenderTransformOrigin="0.5 0.5">
+            <ed:RegularPolygon Fill="#FF02024D" Height="143.974"
+        		InnerRadius="1" PointCount="3" Stretch="Fill" 
+        		Stroke="#FF0F0F0F" VerticalAlignment="Top" Width="10" 
+        		Canvas.Left="52.752" Canvas.Top="-144.333"/>
+        </Canvas>
+        <Canvas x:Name="Canv" Margin="229.25,231.308,253.25,228.192" RenderTransformOrigin="0.5 0.5">
+            <ed:RegularPolygon Fill="#FF0D0DF3" Height="172.141"
+                               InnerRadius="1" PointCount="3" Stretch="Fill" 
+                               Stroke="#FF0F0F0F" VerticalAlignment="Top" Width="6" 
+                               Canvas.Left="26.79" Canvas.Top="-172.5"/>
+        </Canvas>
+
+
+
+    </Grid>
+</Window>
